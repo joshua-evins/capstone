@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="ShapeGenerator.h" />
+    <ClInclude Include="Vertex.h" />
+    <ClInclude Include="TypeDefs.h" />
+    <ClInclude Include="ShapeData.h" />
+    <ClInclude Include="ExportImportHeader.h" />
+    <ClInclude Include="TeapotData.h">
+      <Filter>Hidden\ShapeGeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\FbxExtractor.h">
+      <Filter>Hidden\FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\GeometryToolData.h">
+      <Filter>Hidden\FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\SDK_Utility.h">
+      <Filter>Hidden\FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\MyVertex.h">
+      <Filter>Hidden\FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="fbx\FbxLoader.h" />
+    <ClInclude Include="Slider.h" />
+    <ClInclude Include="AnimationKeySet.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Hidden">
+      <UniqueIdentifier>{1f395795-b12e-443a-bb90-4bf7ce93f89c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hidden\ShapeGeneration">
+      <UniqueIdentifier>{21d37d38-83d4-4277-9ae1-f65f2b69f70b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hidden\FBX">
+      <UniqueIdentifier>{8ae10734-296d-442b-9733-f8a54762e911}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hidden\Qt">
+      <UniqueIdentifier>{aeb22b0a-be04-4c3d-a70b-b73436108912}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Vertex.cpp">
+      <Filter>Hidden</Filter>
+    </ClCompile>
+    <ClCompile Include="ShapeGenerator.cpp">
+      <Filter>Hidden\ShapeGeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="fbx\FbxLoader.cpp">
+      <Filter>Hidden\FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="fbx\SDK_Utility.cxx">
+      <Filter>Hidden\FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="Slider.cpp">
+      <Filter>Hidden\Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="Slider_moc.cpp">
+      <Filter>Hidden\Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="Mainer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="m.bat" />
+  </ItemGroup>
+</Project>

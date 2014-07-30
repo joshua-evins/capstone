@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NBody", "NBody\NBody.vcxproj", "{DA132DBA-1472-4A1D-888E-68D12893982A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Engine", "..\Engine\Engine.vcxproj", "{1A4FE7E9-979F-484B-98C4-B439581F8157}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA132DBA-1472-4A1D-888E-68D12893982A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DA132DBA-1472-4A1D-888E-68D12893982A}.Debug|Win32.Build.0 = Debug|Win32
+		{DA132DBA-1472-4A1D-888E-68D12893982A}.Release|Win32.ActiveCfg = Release|Win32
+		{DA132DBA-1472-4A1D-888E-68D12893982A}.Release|Win32.Build.0 = Release|Win32
+		{1A4FE7E9-979F-484B-98C4-B439581F8157}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1A4FE7E9-979F-484B-98C4-B439581F8157}.Debug|Win32.Build.0 = Debug|Win32
+		{1A4FE7E9-979F-484B-98C4-B439581F8157}.Release|Win32.ActiveCfg = Release|Win32
+		{1A4FE7E9-979F-484B-98C4-B439581F8157}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

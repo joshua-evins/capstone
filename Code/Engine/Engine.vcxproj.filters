@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Clock.cpp">
+      <Filter>Clock</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugShapeHandler.cpp">
+      <Filter>DebugShapeHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="ShapeDataRead.cpp">
+      <Filter>ShapeDataRead</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Gui2D.cpp">
+      <Filter>Gui2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Gui2D_moc.cpp">
+      <Filter>Gui2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Canvas2D.cpp">
+      <Filter>Gui2D\Canvas2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Particle2D.cpp">
+      <Filter>Physics\Particle2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Particle2DImpulseGenerator.cpp">
+      <Filter>Physics\Particle2DImpulseGenerator</Filter>
+    </ClCompile>
+    <ClCompile Include="Particle2DImpulseRegistry.cpp">
+      <Filter>Physics\Particle2DImpulseRegistry</Filter>
+    </ClCompile>
+    <ClCompile Include="PIG2D_Drag.cpp">
+      <Filter>Physics\PIG2D_Drag</Filter>
+    </ClCompile>
+    <ClCompile Include="PIG2D_Spring.cpp">
+      <Filter>Physics\PIG2D_Spring</Filter>
+    </ClCompile>
+    <ClCompile Include="PIG2D_Anchored.cpp">
+      <Filter>Physics\PIG2D_Anchored</Filter>
+    </ClCompile>
+    <ClCompile Include="PIG2D_Bungee.cpp">
+      <Filter>Physics\PIG2D_Bungee</Filter>
+    </ClCompile>
+    <ClCompile Include="PIG2D_Buoyancy.cpp">
+      <Filter>Physics\PIG2D_Buoyancy</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonInfo.cpp">
+      <Filter>Gui2D\ButtonInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonInfo_moc.cpp">
+      <Filter>Gui2D\ButtonInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="Particle2DContact.cpp">
+      <Filter>Physics\Collision2D\Contact</Filter>
+    </ClCompile>
+    <ClCompile Include="Particle2DContactResolver.cpp">
+      <Filter>Physics\Collision2D\Resolver</Filter>
+    </ClCompile>
+    <ClCompile Include="VerletSystem.cpp">
+      <Filter>Physics\Verlet2D</Filter>
+    </ClCompile>
+    <ClCompile Include="VerletCanvas2D.cpp">
+      <Filter>Physics\Verlet2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Editing\Connection.cpp">
+      <Filter>Editing_RealFolder</Filter>
+    </ClCompile>
+    <ClCompile Include="Editing\LevelData.cpp">
+      <Filter>Editing_RealFolder</Filter>
+    </ClCompile>
+    <ClCompile Include="Editing\Node.cpp">
+      <Filter>Editing_RealFolder</Filter>
+    </ClCompile>
+    <ClCompile Include="Editing\Heuristic.cpp">
+      <Filter>Editing_RealFolder</Filter>
+    </ClCompile>
+    <ClCompile Include="Editing\NodeRecord.cpp">
+      <Filter>Editing_RealFolder</Filter>
+    </ClCompile>
+    <ClCompile Include="Editing\PathConnection.cpp">
+      <Filter>Editing_RealFolder</Filter>
+    </ClCompile>
+    <ClCompile Include="Editing\PathfindingList.cpp">
+      <Filter>Editing_RealFolder</Filter>
+    </ClCompile>
+    <ClCompile Include="Editing\Character.cpp">
+      <Filter>Editing_RealFolder</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>Pathing\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <Filter>Pathing\Node</Filter>
+    </ClCompile>
+    <ClCompile Include="Connection.cpp">
+      <Filter>Pathing\Connection</Filter>
+    </ClCompile>
+    <ClCompile Include="Heuristic.cpp">
+      <Filter>Pathing\Heuristic</Filter>
+    </ClCompile>
+    <ClCompile Include="PathFindingList.cpp">
+      <Filter>Pathing\PathFindingList</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeRecord.cpp">
+      <Filter>Pathing\NodeRecord</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelData.cpp">
+      <Filter>LevelData</Filter>
+    </ClCompile>
+    <ClCompile Include="PathConnection.cpp">
+      <Filter>Pathing\PathConnection</Filter>
+    </ClCompile>
+    <ClCompile Include="AI_Node.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI_State.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="Flag.cpp">
+      <Filter>Pathing</Filter>
+    </ClCompile>
+    <ClCompile Include="RendererWindow.cpp" />
+    <ClCompile Include="DebugMenuManager.cpp" />
+    <ClCompile Include="DebugMenu.cpp" />
+    <ClCompile Include="OpenCLInfo.cpp">
+      <Filter>OpenCL</Filter>
+    </ClCompile>
+    <ClCompile Include="KernelWithRanges.cpp">
+      <Filter>OpenCL</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Clock.h">
+      <Filter>Clock</Filter>
+    </ClInclude>
+    <ClInclude Include="ExportHeader.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugShapeHandler.h">
+      <Filter>DebugShapeHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="typedefs_Engine.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="ShapeDataRead.h">
+      <Filter>ShapeDataRead</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Gui2D.h">
+      <Filter>Gui2D</Filter>
+    </ClInclude>
+    <ClInclude Include="MathConstants.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Canvas2D.h">
+      <Filter>Gui2D\Canvas2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Particle2D.h">
+      <Filter>Physics\Particle2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Particle2DImpulseGenerator.h">
+      <Filter>Physics\Particle2DImpulseGenerator</Filter>
+    </ClInclude>
+    <ClInclude Include="Particle2DImpulseRegistry.h">
+      <Filter>Physics\Particle2DImpulseRegistry</Filter>
+    </ClInclude>
+    <ClInclude Include="PIG2D_Drag.h">
+      <Filter>Physics\PIG2D_Drag</Filter>
+    </ClInclude>
+    <ClInclude Include="PIG2D_Spring.h">
+      <Filter>Physics\PIG2D_Spring</Filter>
+    </ClInclude>
+    <ClInclude Include="PIG2D_Anchored.h">
+      <Filter>Physics\PIG2D_Anchored</Filter>
+    </ClInclude>
+    <ClInclude Include="PIG2D_Bungee.h">
+      <Filter>Physics\PIG2D_Bungee</Filter>
+    </ClInclude>
+    <ClInclude Include="PIG2D_Buoyancy.h">
+      <Filter>Physics\PIG2D_Buoyancy</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonInfo.h">
+      <Filter>Gui2D\ButtonInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Particle2DContact.h">
+      <Filter>Physics\Collision2D\Contact</Filter>
+    </ClInclude>
+    <ClInclude Include="Particle2DContactResolver.h">
+      <Filter>Physics\Collision2D\Resolver</Filter>
+    </ClInclude>
+    <ClInclude Include="VerletSystem.h">
+      <Filter>Physics\Verlet2D</Filter>
+    </ClInclude>
+    <ClInclude Include="VerletCanvas2D.h">
+      <Filter>Physics\Verlet2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Editing\Node.h">
+      <Filter>Editing_RealFolder</Filter>
+    </ClInclude>
+    <ClInclude Include="Editing\Connection.h">
+      <Filter>Editing_RealFolder</Filter>
+    </ClInclude>
+    <ClInclude Include="editing\LevelData.h">
+      <Filter>Editing_RealFolder</Filter>
+    </ClInclude>
+    <ClInclude Include="Editing\Heuristic.h">
+      <Filter>Editing_RealFolder</Filter>
+    </ClInclude>
+    <ClInclude Include="Editing\PathConnection.h">
+      <Filter>Editing_RealFolder</Filter>
+    </ClInclude>
+    <ClInclude Include="Editing\NodeRecord.h">
+      <Filter>Editing_RealFolder</Filter>
+    </ClInclude>
+    <ClInclude Include="Editing\PathfindingList.h">
+      <Filter>Editing_RealFolder</Filter>
+    </ClInclude>
+    <ClInclude Include="Editing\Character.h">
+      <Filter>Editing_RealFolder</Filter>
+    </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>Pathing\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>Pathing\Node</Filter>
+    </ClInclude>
+    <ClInclude Include="Connection.h">
+      <Filter>Pathing\Connection</Filter>
+    </ClInclude>
+    <ClInclude Include="Heuristic.h">
+      <Filter>Pathing\Heuristic</Filter>
+    </ClInclude>
+    <ClInclude Include="PathFindingList.h">
+      <Filter>Pathing\PathFindingList</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeRecord.h">
+      <Filter>Pathing\NodeRecord</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelData.h">
+      <Filter>LevelData</Filter>
+    </ClInclude>
+    <ClInclude Include="PathConnection.h">
+      <Filter>Pathing\PathConnection</Filter>
+    </ClInclude>
+    <ClInclude Include="AI_Node.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI_State.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Flag.h">
+      <Filter>Pathing</Filter>
+    </ClInclude>
+    <ClInclude Include="RendererWindow.h" />
+    <ClInclude Include="DebugMenuManager.h" />
+    <ClInclude Include="DebugMenu.h" />
+    <ClInclude Include="OpenCLInfo.h">
+      <Filter>OpenCL</Filter>
+    </ClInclude>
+    <ClInclude Include="KernelWithRanges.h">
+      <Filter>OpenCL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Clock">
+      <UniqueIdentifier>{bab16aa0-732c-46f4-b9da-5c903c95ff8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DebugMenu">
+      <UniqueIdentifier>{432fe92c-d4da-49f8-b538-58d918d7c704}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DebugShapeHandler">
+      <UniqueIdentifier>{f8673027-4396-44b9-967a-a293485b3442}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="misc">
+      <UniqueIdentifier>{5b1b3a4f-620b-42be-aaca-f565730d9eda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer">
+      <UniqueIdentifier>{6b2cb342-130e-4777-9af3-4abcc1dcac32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShapeDataRead">
+      <UniqueIdentifier>{654cf1df-e4e2-4e10-bed1-b0d55df7ab03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera">
+      <UniqueIdentifier>{a02486fb-7b5c-4b6b-a963-0bc5535bf649}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gui2D">
+      <UniqueIdentifier>{5c6d5040-9cf2-4e50-80f4-db95216d74f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics">
+      <UniqueIdentifier>{eba8fded-bdee-48bb-bcd4-7d7e7096788f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{b3620ef2-5013-42e7-b8c1-e8a30355dd3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gui2D\Canvas2D">
+      <UniqueIdentifier>{2d3d96a7-ba8e-403b-ad1d-d49a41dd579b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics\Particle2D">
+      <UniqueIdentifier>{55fcf492-e6f1-4082-b6e5-5a90eb2deab2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics\Particle2DImpulseRegistry">
+      <UniqueIdentifier>{7be96792-6013-4f62-81e4-8df2b6dee9b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics\PIG2D_Drag">
+      <UniqueIdentifier>{c866784f-22f1-44f7-a7d9-c8eac18bc571}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics\PIG2D_Spring">
+      <UniqueIdentifier>{2fd6883a-bce9-4414-b01a-b5fe7d056733}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics\Particle2DImpulseGenerator">
+      <UniqueIdentifier>{8d7c614e-5b2a-4994-9349-7f76c462c434}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics\PIG2D_Bungee">
+      <UniqueIdentifier>{efa805e7-4858-4fc4-917a-2e7c70ba9383}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics\PIG2D_Anchored">
+      <UniqueIdentifier>{fe8c3806-074f-44b2-b53a-eaaabfab3e87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics\PIG2D_Buoyancy">
+      <UniqueIdentifier>{d88b239e-217a-4c25-a403-2c3b0e5884cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gui2D\ButtonInfo">
+      <UniqueIdentifier>{d310d282-24f5-41b1-a404-8c6038aab101}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics\Collision2D">
+      <UniqueIdentifier>{34ffb6bc-43a9-481b-95dc-c088f2925704}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics\Collision2D\Contact">
+      <UniqueIdentifier>{2e27f148-c5d6-4cfa-b781-ab32fdbbbb48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics\Collision2D\Resolver">
+      <UniqueIdentifier>{765f9756-2883-413a-816d-ab1515d1b93a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics\Verlet2D">
+      <UniqueIdentifier>{a01ad127-bfe1-4583-b893-74e26a827f31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererManager">
+      <UniqueIdentifier>{e1ed28da-fea9-4c4b-bf5a-a85dd769e773}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Editing_RealFolder">
+      <UniqueIdentifier>{3c87477e-d42c-4f42-8364-229c0887650b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pathing">
+      <UniqueIdentifier>{00e5b0e7-980f-477f-a1d0-25c4a8dd0df8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pathing\Node">
+      <UniqueIdentifier>{c16efe28-bfad-4ecb-97b1-bcf6692284cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pathing\Connection">
+      <UniqueIdentifier>{4f9b1a0f-5358-4e10-9536-98cb9c752986}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pathing\NodeRecord">
+      <UniqueIdentifier>{ca4866a2-5eb3-4e65-806d-ca99510903be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pathing\PathFindingList">
+      <UniqueIdentifier>{cf308fa4-da85-4c66-a99b-b850c9f7b1c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pathing\Heuristic">
+      <UniqueIdentifier>{073a4378-1c89-4c2d-a9bc-dffdfc06385d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pathing\Character">
+      <UniqueIdentifier>{f5d17fcb-cc53-470c-9733-d4e9344fa58b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LevelData">
+      <UniqueIdentifier>{d54dfd7a-cb1f-4061-9759-c5234dee15da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pathing\PathConnection">
+      <UniqueIdentifier>{640428d3-e475-4c28-912d-431879b89de5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AI">
+      <UniqueIdentifier>{5443ee79-c98b-4120-a553-640f9f05dd98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenCL">
+      <UniqueIdentifier>{160419e0-631a-4aa3-9435-d08473cc9a80}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

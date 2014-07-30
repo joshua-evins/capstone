@@ -1,0 +1,7 @@
+#ifndef MATHCONSTANTS_H
+#define MATHCONSTANTS_H
+
+#define FLOAT_MAX 3.40282e+038f
+#define FLOAT_MIN -3.40282e+038f
+
+#endif

@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1A4FE7E9-979F-484B-98C4-B439581F8157}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Engine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)..\LocalDeploy\$(Configuration)\</OutDir>
+    <IntDir>Intermediate\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>Intermediate\$(Configuration)\</IntDir>
+    <OutDir>$(ProjectDir)..\LocalDeploy\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;ENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\Vendor\OpenCL\include;$(SolutionDir)..\..\Vendor\NeumontTools\fbx;$(SolutionDir)..\..\Vendor\FastDelegates;$(SolutionDir)..\..\Vendor\glew\include;$(SolutionDir)..\..\Vendor\glm;$(SolutionDir)..\..\Vendor\Qt\include;$(SolutionDir)..\..\Vendor\NeumontTools\include</AdditionalIncludeDirectories>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DisableSpecificWarnings>4127;4201;4251;4482;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\..\Vendor\OpenCL\lib;$(SolutionDir)..\..\Vendor\Qt\lib;$(SolutionDir)..\..\Vendor\glew\lib;$(SolutionDir)..\..\Vendor\NeumontTools\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OpenCL.lib;NeumontTools.lib;opengl32.lib;QtOpenGLd4.lib;QtGuid4.lib;QtCored4.lib;glew32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AssemblyDebug>true</AssemblyDebug>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;ENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\Vendor\OpenCL\include;$(SolutionDir)..\..\Vendor\NeumontTools\fbx;$(SolutionDir)..\..\Vendor\FastDelegates;$(SolutionDir)..\..\Vendor\glew\include;$(SolutionDir)..\..\Vendor\glm;$(SolutionDir)..\..\Vendor\Qt\include;$(SolutionDir)..\..\Vendor\NeumontTools\include</AdditionalIncludeDirectories>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\..\Vendor\OpenCL\lib;$(SolutionDir)..\..\Vendor\Qt\lib;$(SolutionDir)..\..\Vendor\glew\lib;$(SolutionDir)..\..\Vendor\NeumontTools\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OpenCL.lib;NeumontTools.lib;opengl32.lib;QtOpenGLd4.lib;QtGuid4.lib;QtCored4.lib;glew32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AI_Node.cpp" />
+    <ClCompile Include="AI_State.cpp" />
+    <ClCompile Include="ButtonInfo.cpp" />
+    <ClCompile Include="ButtonInfo_moc.cpp" />
+    <ClCompile Include="Canvas2D.cpp" />
+    <ClCompile Include="Character.cpp" />
+    <ClCompile Include="Clock.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Connection.cpp" />
+    <ClCompile Include="DebugMenu.cpp" />
+    <ClCompile Include="DebugMenuManager.cpp" />
+    <ClCompile Include="DebugShapeHandler.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="Editing\Character.cpp" />
+    <ClCompile Include="Editing\Connection.cpp" />
+    <ClCompile Include="Editing\LevelData.cpp" />
+    <ClCompile Include="Editing\Node.cpp" />
+    <ClCompile Include="Flag.cpp" />
+    <ClCompile Include="Gui2D.cpp" />
+    <ClCompile Include="Gui2D_moc.cpp" />
+    <ClCompile Include="Editing\Heuristic.cpp" />
+    <ClCompile Include="Editing\NodeRecord.cpp" />
+    <ClCompile Include="Heuristic.cpp" />
+    <ClCompile Include="KernelWithRanges.cpp" />
+    <ClCompile Include="LevelData.cpp" />
+    <ClCompile Include="Node.cpp" />
+    <ClCompile Include="NodeRecord.cpp" />
+    <ClCompile Include="OpenCLInfo.cpp" />
+    <ClCompile Include="Particle2DContact.cpp" />
+    <ClCompile Include="Particle2DContactResolver.cpp" />
+    <ClCompile Include="Editing\PathConnection.cpp" />
+    <ClCompile Include="Editing\PathfindingList.cpp" />
+    <ClCompile Include="PathConnection.cpp" />
+    <ClCompile Include="PathFindingList.cpp" />
+    <ClCompile Include="PIG2D_Anchored.cpp" />
+    <ClCompile Include="PIG2D_Bungee.cpp" />
+    <ClCompile Include="PIG2D_Buoyancy.cpp" />
+    <ClCompile Include="PIG2D_Drag.cpp" />
+    <ClCompile Include="Particle2D.cpp" />
+    <ClCompile Include="Particle2DImpulseRegistry.cpp" />
+    <ClCompile Include="Particle2DImpulseGenerator.cpp" />
+    <ClCompile Include="PIG2D_Spring.cpp" />
+    <ClCompile Include="Renderer.cpp">
+      <DeploymentContent>false</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="RendererWindow.cpp" />
+    <ClCompile Include="ShapeDataRead.cpp" />
+    <ClCompile Include="VerletCanvas2D.cpp" />
+    <ClCompile Include="VerletSystem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AI_Node.h" />
+    <ClInclude Include="ButtonInfo.h" />
+    <ClInclude Include="Canvas2D.h" />
+    <ClInclude Include="Character.h" />
+    <ClInclude Include="Clock.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Connection.h" />
+    <ClInclude Include="DebugMenu.h" />
+    <ClInclude Include="DebugMenuManager.h" />
+    <ClInclude Include="DebugShapeHandler.h" />
+    <ClInclude Include="Editing\Character.h" />
+    <ClInclude Include="Editing\Connection.h" />
+    <ClInclude Include="editing\LevelData.h" />
+    <ClInclude Include="Editing\Node.h" />
+    <ClInclude Include="ExportHeader.h" />
+    <ClInclude Include="Flag.h" />
+    <ClInclude Include="Gui2D.h" />
+    <ClInclude Include="Editing\Heuristic.h" />
+    <ClInclude Include="Heuristic.h" />
+    <ClInclude Include="KernelWithRanges.h" />
+    <ClInclude Include="LevelData.h" />
+    <ClInclude Include="MathConstants.h" />
+    <ClInclude Include="Editing\NodeRecord.h" />
+    <ClInclude Include="Node.h" />
+    <ClInclude Include="NodeRecord.h" />
+    <ClInclude Include="OpenCLInfo.h" />
+    <ClInclude Include="Particle2DContact.h" />
+    <ClInclude Include="Particle2DContactResolver.h" />
+    <ClInclude Include="Editing\PathConnection.h" />
+    <ClInclude Include="Editing\PathfindingList.h" />
+    <ClInclude Include="PathConnection.h" />
+    <ClInclude Include="PathFindingList.h" />
+    <ClInclude Include="PIG2D_Anchored.h" />
+    <ClInclude Include="PIG2D_Bungee.h" />
+    <ClInclude Include="PIG2D_Buoyancy.h" />
+    <ClInclude Include="PIG2D_Drag.h" />
+    <ClInclude Include="Particle2D.h" />
+    <ClInclude Include="Particle2DImpulseRegistry.h" />
+    <ClInclude Include="Particle2DImpulseGenerator.h" />
+    <ClInclude Include="PIG2D_Spring.h" />
+    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="RendererWindow.h" />
+    <ClInclude Include="ShapeDataRead.h" />
+    <ClInclude Include="AI_State.h" />
+    <ClInclude Include="typedefs_Engine.h" />
+    <ClInclude Include="VerletCanvas2D.h" />
+    <ClInclude Include="VerletSystem.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
