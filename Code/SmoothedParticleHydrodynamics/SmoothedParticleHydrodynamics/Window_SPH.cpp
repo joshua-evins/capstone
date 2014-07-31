@@ -244,9 +244,6 @@ void Window_SPH::inheritedUpdate()
 		clEnqueueReleaseGLObjects(queue(), 1, &position(), 0, 0, 0);
 		clEnqueueReleaseGLObjects(queue(), 1, &lifetimes(), 0, 0, 0);
 
-		glm::vec4* positions = new glm::vec4[PARTICLE_COUNT];
-
-
 		facing->updateInfo(sizeof(glm::vec3), &renderer->camera.facing);
 //		}catch(cl::Error e){
 	//	std::cout << "Build log:" << std::endl << e.err() << std::endl;

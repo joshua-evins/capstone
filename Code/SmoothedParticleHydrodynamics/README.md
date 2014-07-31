@@ -22,10 +22,6 @@ From AMD's SPH demo I used:
 My parts in this project were:
 * The Spout and Drain, including key controls
   * OpenCL has no random utility, so I created a seeded random function that gave a good spread of random numbers based on a narrow spread of position values
-  * This system will very rarely cause a crash if two particles are placed almost exactly on top of one another
-    * I have considered moving from a position-seeded random to a global value that is atomically-incremented in order to prevent this from happening
-    * I tested the approach of checking the positions of all other particles to ensure valid placement, but that solution slowed down the simulation significantly
-    * I have also considered placing a sanity check in the malfunctioning kernel to reset any particles in an error state, but I want to prevent the error from occuring instead of just band-aid fixing it
 * Rendering
   * AMD used a water-like rendering process that obscured the particle-based nature of the simulation
   * I opted to use my engine to render the simulation as simple particles to be more transparent, as well as to save some time to allow for more tinkering and optimization
