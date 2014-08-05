@@ -31,3 +31,5 @@ My parts in this project were:
 The .cl file that contains the kernels is heavily doctored with unraveled loops, vector-based loading, and a general lack of functions due partially to the nature of the OpenCL kernel language and partially to me testing different (and not always readable or extensible) approaches to see what gave the most performance.
 
 One of my most interesting finds was in a situation where I needed to find the total number of ones before the nth element in an array of 1024 ones or zeroes. I knew the total number of ones in the array, so counting left from the nth element or right from the nth element didn't matter to me (total - right = left). However, the program was significantly slower when I included a conditional statement to determine which direction (left or right) would be faster and count that way. Branching is much more expensive in OpenCL than I expected.
+
+For more detail about the development process of this demo see weeks 7-10 in the [https://github.com/joshua-evins/capstone/blob/master/Documentation/WeeklyProjectSummary.pdf](WeeklyProgressSummary)

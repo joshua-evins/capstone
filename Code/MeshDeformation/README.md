@@ -13,3 +13,5 @@ Demo Controls:
 * Z: clear effects
 
 The engine has a slight conflict with the 2012 compiler so upgrading that project, which is a requirement of this project, may cause a crash. You can set the compiler for that project to 2010 post-upgrade and it should function properly.
+
+For more detail about the development process of this demo see weeks 2-3 in the [https://github.com/joshua-evins/capstone/blob/master/Documentation/WeeklyProjectSummary.pdf](WeeklyProgressSummary)
