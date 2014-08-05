@@ -10,4 +10,4 @@ Demo Controls:
 The engine has a slight conflict with the 2012 compiler, so upgrading that project, which is a requirement of this project, may cause a crash.
 OpenCL is touchy across different hardware, so it is possible that may cause the program to break as well.
 
-For more detail about the development process of this demo (much of which was research for [https://github.com/joshua-evins/capstone/tree/master/Code/SmoothedParticleHydrodynamics](SmoothedParticleHydrodynamics)) see weeks 4-6 in the [https://github.com/joshua-evins/capstone/blob/master/Documentation/WeeklyProjectSummary.pdf](WeeklyProgressSummary)
+For more detail about the development process of this demo (much of which was research for [SmoothedParticleHydrodynamics](https://github.com/joshua-evins/capstone/tree/master/Code/SmoothedParticleHydrodynamics)) see weeks 4-6 in the [WeeklyProgressSummary](https://github.com/joshua-evins/capstone/blob/master/Documentation/WeeklyProjectSummary.pdf)
