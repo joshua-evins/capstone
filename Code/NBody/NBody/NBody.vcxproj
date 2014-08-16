@@ -57,7 +57,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)..\..\Vendor\OpenCL\lib;$(SolutionDir)..\..\Vendor\glew\lib;$(SolutionDir)..\..\Vendor\Qt\lib;$(SolutionDir)..\LocalDeploy\$(Configuration);$(SolutionDir)..\..\Vendor\NeumontTools\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\..\Vendor\OpenCL\lib;$(SolutionDir)..\..\Vendor\glew\lib;$(SolutionDir)..\..\Vendor\Qt\lib;$(SolutionDir)..\LocalDeploy\$(Configuration);$(SolutionDir)..\..\Vendor\NeumontTools\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>Engine.lib;NeumontTools.lib;opengl32.lib;QtOpenGLd4.lib;QtGuid4.lib;QtCored4.lib;OpenCL.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
